@@ -1,0 +1,35 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        gradlePluginPortal()
+    }
+}
+
+
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.3.21'
+    id 'java'
+}
+
+group 'ko'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation "com.typesafe.akka:akka-actor_2.13:2.6.4"
+
+    testImplementation "junit:junit:4.13"
+    testImplementation "com.typesafe.akka:akka-testkit_2.13:2.6.4"
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}

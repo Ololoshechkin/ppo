@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ActorTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-03-16T02:48:47" hostname="MacBook-Pro-Vadim.local" time="1.465">
+  <properties/>
+  <testcase name="testOneTimeout" classname="ActorTest" time="1.02"/>
+  <testcase name="testTwoTimeouts" classname="ActorTest" time="0.119"/>
+  <testcase name="testError" classname="ActorTest" time="0.121"/>
+  <testcase name="testThree" classname="ActorTest" time="0.05"/>
+  <testcase name="testSingle" classname="ActorTest" time="0.038"/>
+  <testcase name="testAllTimeouts" classname="ActorTest" time="0.116"/>
+  <system-out><![CDATA[Searcher: Bing got an error: timeout
+Searcher: Яндекс got an error: timeout
+Searcher: Bing got an error: timeout
+Searcher: Bing got an error: timeout
+Searcher: Яндекс got an error: timeout
+Searcher: Bing got an error: timeout
+Searcher: Google got an error: timeout
+Searcher: Яндекс got an error: timeout
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
